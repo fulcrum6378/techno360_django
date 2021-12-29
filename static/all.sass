@@ -1,0 +1,38 @@
+$CP: #55d7ff
+$CS: #2cd05b
+$CT: #f9f9f9
+$CA: #777
+$CTD: #333
+$CAD: #bbb
+
+\:root
+  --bg: #{$CT}
+  --ca: #{$CA}
+
+@media (prefers-color-scheme: dark)
+  :root
+    --bg: #{$CTD}
+    --ca: #{$CAD}
+
+body
+  background: var(--bg)
+  color: var(--ca)
+
+body, main
+  margin: 0 !important
+  padding: 0 !important
+
+#intro
+  background-color: $CP
+
+#order
+  background-color: $CS
+
+#prods
+  background-color: $CP
+
+#teach
+  background-color: $CS
+
+#about
+  background-color: $CP
