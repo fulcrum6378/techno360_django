@@ -3,37 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#35363A">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#333333">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#55d7ff">
 
   <title>تکنو360</title>
 
   {% comment %}<link href="{% static "favicon.ico" %}" rel="icon">{% endcomment %}
   <link href="{% static "node_modules/bootstrap/dist/css/bootstrap.rtl.css" %}" rel="stylesheet">
-  <link href="{% static "node_modules/material-components-web/dist/material-components-web.min.css" %}"
-        rel="stylesheet">
   {% comment %}<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">{% endcomment %}
   <link href="{% static "all.css" %}" rel="stylesheet">
+  <link href="{% static "index.css" %}" rel="stylesheet">
+  <link rel="manifest" href="{% static "manifest.json" %}">
 
   <script src="{% static "node_modules/jquery/dist/jquery.slim.js" %}"></script>
   <script src="{% static "node_modules/bootstrap/dist/js/bootstrap.bundle.js" %}"></script>
-  <script src="{% static "node_modules/material-components-web/dist/material-components-web.min.js" %}"></script>
 </head>
 <body>
 <main class="container-fluid">
   <header class="vh-100" id="intro">
+    1
   </header>
 
   <section class="vh-100" id="order">
+    2
   </section>
 
   <section class="vh-100" id="prods">
+    3
   </section>
 
   <section class="vh-100" id="teach">
+    4
   </section>
 
   <footer class="vh-100" id="about">
+    5
   </footer>
 </main>
+<script src="{% static "all.js" %}"></script>
 </body>
 </html>

@@ -1,4 +1,2 @@
 static/node_modules
-static/*.css
-static/*.css.map
 venv

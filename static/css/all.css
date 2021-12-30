@@ -1,0 +1,22 @@
+:root {
+  --bg: #f9f9f9;
+  --ca: #777;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #333;
+    --ca: #bbb;
+  }
+}
+body {
+  background: var(--bg);
+  color: var(--ca);
+}
+
+body, main {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/*# sourceMappingURL=all.css.map */

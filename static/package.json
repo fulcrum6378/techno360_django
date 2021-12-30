@@ -1,6 +1,11 @@
 {
+  "name": "techno360",
   "dependencies": {
     "bootstrap": "^5.1.3",
-    "jquery": "^3.6.0"
+    "jquery": "^3.6.0",
+    "sass": "^1.45.1"
+  },
+  "scripts": {
+    "sass": "sass ./css/"
   }
 }
