@@ -12,34 +12,17 @@
   <link href="{% static "node_modules/bootstrap/dist/css/bootstrap.rtl.css" %}" rel="stylesheet">
   {% comment %}<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">{% endcomment %}
   <link href="{% static "css/all.css" %}" rel="stylesheet">
-  <link href="{% static "css/index.css" %}" rel="stylesheet">
+  <link href="{% static "" %}css/{{ name }}.css" rel="stylesheet">
   <link rel="manifest" href="{% static "manifest.json" %}">
 
   <script src="{% static "node_modules/jquery/dist/jquery.slim.js" %}"></script>
   <script src="{% static "node_modules/bootstrap/dist/js/bootstrap.bundle.js" %}"></script>
+  <script src="{% static "js/all.js" %}"></script>
 </head>
 <body>
 <main class="container-fluid">
-  <header class="vh-100" id="intro">
-    1
-  </header>
-
-  <section class="vh-100" id="order">
-    2
-  </section>
-
-  <section class="vh-100" id="prods">
-    3
-  </section>
-
-  <section class="vh-100" id="teach">
-    4
-  </section>
-
-  <footer class="vh-100" id="about">
-    5
-  </footer>
+{% include "index.html" %}
 </main>
-<script src="{% static "js/all.js" %}"></script>
+<link href="{% static "" %}js/{{ name }}.js" rel="stylesheet">
 </body>
 </html>
