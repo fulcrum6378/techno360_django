@@ -44,7 +44,7 @@ class Purchase(m.Model):
     cret = m.DateTimeField(auto_now_add=True)
     paid = m.DateTimeField(null=True, blank=True)
     dliv = m.DateTimeField(null=True, blank=True)
-    link = m.URLField(auto_now_add=True, null=True, blank=True)
+    link = m.URLField(null=True, blank=True)
 
 
 class Contract(m.Model):
@@ -74,4 +74,4 @@ class Ticket(m.Model):  # Beware of SQLI
     thrd = m.ForeignKey(Thread, on_delete=m.CASCADE)
     text = m.TextField(max_length=5000)
     date = m.DateTimeField(auto_now_add=True)
-    fmus = m.BooleanField()
+    frmu = m.BooleanField()  # From Us

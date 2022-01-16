@@ -7,7 +7,7 @@ DEBUG = True
 ALLOWED_HOSTS = ["192.168.1.107", "techno360.ir"]
 
 INSTALLED_APPS = [
-    'techno360',
+    'techno360.apps.Techno360Config',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
