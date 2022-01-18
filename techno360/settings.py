@@ -4,7 +4,11 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-qjwmvni+rdx@am+7o1j5s0^bzai0e!927h4t_3e-n)$+y@$p2$'
 DEBUG = True
-ALLOWED_HOSTS = ["192.168.1.107", "techno360.ir"]
+SECURE_SSL_REDIRECT = not DEBUG
+if DEBUG:
+    ALLOWED_HOSTS = ["192.168.1.107"]
+else:
+    ALLOWED_HOSTS = ["techno360.ir"]
 
 INSTALLED_APPS = [
     'techno360.apps.Techno360Config',
