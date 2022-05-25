@@ -18,10 +18,18 @@
   <script src="{% static "node_modules/jquery/dist/jquery.slim.js" %}"></script>
   <script src="{% static "node_modules/bootstrap/dist/js/bootstrap.bundle.js" %}"></script>
   <script src="{% static "js/all.js" %}" type="module"></script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6PTGZ54J1Z"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6PTGZ54J1Z');
+  </script>
 </head>
 <body>
 <main class="container-fluid">
-{% include "index.html" %}
+  {% include html %}
 </main>
 <script src="{% static "" %}js/{{ name }}.js" type="module"></script>
 </body>

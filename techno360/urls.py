@@ -5,6 +5,8 @@ from . import views
 
 urlpatterns = [
     # path('', include('backbone.urls')),
-    path('', views.index, name='index'),
     path('admin/', admin.site.urls),
+    path('', views.index, name='index'),
+    path('library/', views.library, name='library'),
+    path('lessons/', views.lessons, name='lessons'),
 ]
